@@ -1,145 +1,168 @@
-.bg-container {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #3975e0, #23c489, #5333b7, #d92f8e);
-  display: grid;
-  animation: waterEffect 10s ease-in-out infinite;
 
-}
-@keyframes waterEffect {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.form-container {
+
+
+
+/* Estilos para el Navbar */
+.navbar-container {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 3rem 0;
-  justify-self: center;
-  align-self: center;
-}
-
-mat-card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  max-width: 30rem;
-  margin: 0 1rem;
-  padding: 2rem 0;
-  border-radius:20px;
-  background: rgba(200, 191, 232, 0.29);
-}
-
-mat-card-header {
-  flex-direction: column;
-}
-mat-card-title{
-  font-size: 3rem;
-  line-height: 1;
-  font-family: "Segoe UI",Arial,sans-serif;
-  font-weight: bold;
-  color: #faf8f8;
-}
-
-.logo-container mat-card-title {
-  margin-left: 1rem;
-  font-size: 3.5rem;
-  line-height: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #3498db;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  transition: color 0.3s ease, font-size 0.3s ease;
+  border-radius: 20px;
+}
+
+.menu a:hover {
+  color: #ecf0f1;
+  font-size: 18px;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Estilos para el contenido principal */
+.bg-container {
+  display: flex;
   justify-content: center;
-  width: 100%;
-  margin-bottom: 2rem;
+  align-items: center;
+  height: auto;
+  background-color: #ecf0f1;
+}
+.split-container {
+  display: flex;
+  width: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.logo-container img {
-  width: 6rem;
-  border-radius: 9999px;
+.left-container {
+  flex: 1;
+  padding: 20px;
 }
 
-.logo-container mat-card-title {
-  margin-left: 1rem;
-  font-size: 3.5rem;
-  line-height: 1;
+.right-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image {
+
+}
+
+/* Estilos adicionales para elementos del formulario */
+.custom-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text {
+  color: #3498db;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 mat-card-content {
-  margin: 0 2rem;
-}
-
-mat-card-content form {
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
-}
-
-mat-card-content form button[type=submit] {
-  background: rgb(47, 153, 47);
-  margin-top: 1rem;
-}
-
-.btn-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: rgb(53, 53, 53);
-  margin: 1rem 0;
-  padding: .25rem;
-  border-radius: 6px;
-}
-a {
-  color: white !important;
-  text-decoration: none;
-  padding: .5rem;
-  border-radius: 6px;
 }
 
-.btn-container a {
+form {
   width: 100%;
 }
 
-.btn-container a.active {
-  background: rgb(47, 153, 47);
-  color: white;
-
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-.btn-container > * + * {
-  margin-left: .25rem;
-}
-button[type="submit"] {
-  color: #ffffff;
-  font-weight: bold;
+button {
+  width: 100%;
+  margin-top: 15px;
+  transition: transform 0.2s ease;
+  border: none;
 }
 
+button:hover {
+  transform: scale(1.05);
+}
 
-@media (max-width: 599.98px) {
-  mat-card {
-    padding: 1rem 0;
+.register-text {
+  color: #555;
+  text-align: center;
+}
+
+/* Regla de medios para dispositivos móviles */
+@media (max-width: 768px) {
+  .right-container {
+    display: none;
   }
 
-  mat-card-content {
-    margin: 1rem;
+  .hamburger-icon {
+    display: block;
   }
 
-  .logo-container {
+  .hamburger-icon:hover {
+    background-color: #2980b9;
+  }
+
+  .bg-container {
+    margin-top: 60px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #3498db;
+    z-index: 1;
   }
 
-  .logo-container mat-card-title {
-    margin-top: 1rem;
-    margin-left: 0;
-    font-size: 2.5rem;
+  .menu.active a {
+    margin: 10px;
   }
 }
