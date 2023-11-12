@@ -57,6 +57,7 @@
   justify-content: center;
   align-items: center;
   height: auto;
+  padding: 54px 0px 54px;
   background-color: #ecf0f1;
 }
 .split-container {
@@ -69,7 +70,7 @@
 
 .left-container {
   flex: 1;
-  padding: 20px;
+  padding: 107px 50px 107px;
 }
 
 .right-container {
@@ -150,7 +151,10 @@ button:hover {
   .menu {
     display: none;
   }
-
+  .left-container {
+    flex: 1;
+    padding: 107px 0px 107px;
+  }
   .menu.active {
     display: flex;
     flex-direction: column;
