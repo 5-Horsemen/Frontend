@@ -1,7 +1,69 @@
+
+
+
+
+/* Estilos para el Navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #3498db;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+.logo-container-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo-navbar {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  transition: color 0.3s ease, font-size 0.3s ease;
+  border-radius: 20px;
+}
+
+.menu a:hover {
+  color: #ecf0f1;
+  font-size: 18px;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
 .bg-container {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #3975e0, #23c489, #5333b7, #d92f8e);
+  background:#ecf0f1;
   display: grid;
   animation: waterEffect 10s ease-in-out infinite;
 }
@@ -24,6 +86,10 @@
   padding: 1rem 0;
   justify-self: center;
   align-self: center;
+  
+}
+.logo-name{
+  color: #3498db;
 }
 
 mat-card {
@@ -35,7 +101,9 @@ mat-card {
   margin: 0 1rem;
   padding: 2rem 0;
   border-radius: 20px;
-  background: rgba(200, 191, 232, 0.29);
+  background:#ecf0f1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
 }
 
 mat-card-header {
@@ -81,7 +149,7 @@ mat-card-content form {
 }
 
 mat-card-content form button[type=submit] {
-  background: rgb(47, 153, 47);
+  background: #3498db;
   margin-top: 1rem;
 }
 
@@ -106,7 +174,7 @@ a {
 }
 
 .btn-container a.active {
-  background: rgb(47, 153, 47);
+  background: #3498db;
 }
 
 .btn-container > * + * {
