@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
-    baseURL: 'https://webservices-production-b2b7.up.railway.app/api/v1',
-    chatURL: 'https://webservices-production-b2b7.up.railway.app'
+    baseURL: 'https://ujobs-backend.azurewebsites.net/api/v1',
+    chatURL: 'https://ujobs-backend.azurewebsites.net'
 };
