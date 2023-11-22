@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
-    baseURL: 'https://bakend-ujobs.azurewebsites.net/api/v1',
-    chatURL: 'https://bakend-ujobs.azurewebsites.net'
+    baseURL: 'http://localhost:8080/api/v1',
+    chatURL: 'http://localhost:8080',
 };
